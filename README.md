@@ -1,5 +1,7 @@
 ## Laravel Pesapal Package Playground
 
+<img width="1105" alt="preview" src="https://github.com/njoguamos/laravel-pesapal-playground/assets/29255728/358a7aea-fbae-4c37-8b23-403c3dd1c0fb">
+
 This is a simple Laravel package that allows you to integrate Pesapal payment gateway into your Laravel application. It implements [Laravel Pesapal Package by Njogu Amos](https://github.com/njoguamos/laravel-pesapal).
 
 ## Installation
@@ -27,6 +29,9 @@ php artisan key:genenate
 # set up your database
 touch database/database.sqlite
 php artisan migrate
+
+# create the first access token
+php atisan pesapal:auth
 ```
 
 Update your .env file with your Pesapal credentials
@@ -43,8 +48,8 @@ Start the application server
 php artisan serve
 ```
 
-Start the websocket server
+Start the schedule worker
 
 ```bash
-php artisan reverb:serve
+php artisan schedule:work
 ```

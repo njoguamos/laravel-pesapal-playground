@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Schedule;
+use NjoguAmos\Pesapal\Models\PesapalToken;
 
-Schedule::call('pesapal:auth')->everyFourMinutes();
-Schedule::call('model:prune')->everyThirtyMinutes();
+Schedule::command('pesapal:auth')->everyThreeMinutes();
+
+Schedule::command('model:prune', ['--model' => [PesapalToken::class]])->everyFiveMinutes();
