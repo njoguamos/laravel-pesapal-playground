@@ -45,6 +45,6 @@ class CreatePesapalIpn extends Component
             session()->flash(key: 'status', value: 'We could not create an IPN.');
         }
 
-        $this->redirect(url: route(name: 'home'));
+        $this->redirect(url: route(name: 'home').'#ipn');
     }
 }

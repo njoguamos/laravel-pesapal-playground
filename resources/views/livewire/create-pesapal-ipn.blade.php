@@ -1,4 +1,7 @@
-<form wire:submit="submit" class="flex items-end justify-between space-x-3 mt-6 w-full">
+<x-container >
+<x-section title="Create a new Instant Payment Notification">
+
+<form wire:submit="submit" class="flex items-end justify-between space-x-3 w-full">
     <label class="form-control w-full">
         <div class="label">
             <span class="label-text">Enter the url to create a new IPN</span>
@@ -13,3 +16,5 @@
 
         <button class="btn btn-primary w-32" type="submit">Create</button>
 </form>
+</x-section>
+</x-container>

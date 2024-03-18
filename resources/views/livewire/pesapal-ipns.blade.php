@@ -1,4 +1,4 @@
-<div wire:poll.60s>
+<div wire:poll.60s id="ipns">
     <x-container>
         <x-section title="Pesapal Instant Payment Notification">
             @if($ipns->isEmpty())
@@ -35,8 +35,6 @@
                     </table>
                 </div>
             @endif
-
-                <livewire:create-pesapal-ipn/>
         </x-section>
     </x-container>
 </div>

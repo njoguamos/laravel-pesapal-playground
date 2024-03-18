@@ -35,5 +35,7 @@
 
     <livewire:pesapal-ipns />
 
+    <livewire:create-pesapal-ipn />
+
     </body>
 </html>

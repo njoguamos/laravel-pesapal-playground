@@ -23,4 +23,11 @@ class PesapalTokens extends Component
 
         return Artisan::output();
     }
+
+    public function runPesapalAuth()
+    {
+        Artisan::call('pesapal:auth');
+
+        $this->redirectRoute(name: 'home').'#tokens';
+    }
 }
