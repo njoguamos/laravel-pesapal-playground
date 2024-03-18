@@ -11,7 +11,7 @@ class PesapalIpns extends Component
     public function render(): View
     {
         return view(view: 'livewire.pesapal-ipns', data: [
-            'ipns' => PesapalIpn::latest()->get()
+            'ipns' => PesapalIpn::latest()->get(),
         ]);
     }
 }
