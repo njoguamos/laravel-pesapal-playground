@@ -1,6 +1,7 @@
 ## Laravel Pesapal Package Playground
 
-<img width="1105" alt="preview" src="https://github.com/njoguamos/laravel-pesapal-playground/assets/29255728/358a7aea-fbae-4c37-8b23-403c3dd1c0fb">
+<img width="1064" alt="Screenshot 2024-03-19 at 02 38 54" src="https://github.com/njoguamos/laravel-pesapal-playground/assets/29255728/cf8503d1-da81-49af-8f70-fb722d5b11ac">
+
 
 The purpose of this repo to allow testing and debugging [Laravel Pesapal Package by Njogu Amos](https://github.com/njoguamos/laravel-pesapal). You can use it to test you Pesapal credentials.
 
