@@ -7,9 +7,9 @@
             <span class="label-text">Enter the url to create a new IPN</span>
         </div>
         <input type="text" placeholder="Endpoint" class="input input-bordered w-full"  wire:model="url"/>
-        @error('form.title')
-            <div class="label text-error-content">
-                <span class="label-text-alt">{{ $message }}</span>
+        @error('url')
+            <div class="label ">
+                <span class="label-text-alt text-red-600 font-medium">{{ $message }}</span>
             </div>
         @enderror
     </label>

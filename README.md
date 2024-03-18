@@ -2,7 +2,7 @@
 
 <img width="1105" alt="preview" src="https://github.com/njoguamos/laravel-pesapal-playground/assets/29255728/358a7aea-fbae-4c37-8b23-403c3dd1c0fb">
 
-This is a simple Laravel package that allows you to integrate Pesapal payment gateway into your Laravel application. It implements [Laravel Pesapal Package by Njogu Amos](https://github.com/njoguamos/laravel-pesapal).
+The purpose of this repo to allow testing and debugging [Laravel Pesapal Package by Njogu Amos](https://github.com/njoguamos/laravel-pesapal). You can use it to test you Pesapal credentials.
 
 ## Installation
 

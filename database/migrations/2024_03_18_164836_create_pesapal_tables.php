@@ -9,14 +9,14 @@ return new class () extends Migration {
     {
         Schema::create('pesapal_tokens', function (Blueprint $table) {
             $table->id();
-            $table->string(column: 'access_token')->unique();
+            $table->string(column: 'access_token');
             $table->timestamp(column: 'expires_at');
             $table->timestamps();
         });
 
         Schema::create('pesapal_ipns', function (Blueprint $table) {
             $table->id();
-            $table->string(column: 'url')->unique();
+            $table->string(column: 'url');
             $table->uuid(column: 'ipn_id');
             $table->unsignedTinyInteger(column: 'type');
             $table->unsignedTinyInteger(column: 'status')->nullable();

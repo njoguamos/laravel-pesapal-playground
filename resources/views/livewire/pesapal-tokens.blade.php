@@ -16,7 +16,7 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>Encrypted Token</th>
+                            <th>Token</th>
                             <th>Created</th>
                             <th>Expires</th>
                         </tr>

@@ -14,8 +14,6 @@
                             <th>#</th>
                             <th>IPN ID</th>
                             <th>Url</th>
-                            <th>Type</th>
-                            <th>Status</th>
                             <th>Updated</th>
                         </tr>
                         </thead>
@@ -25,9 +23,7 @@
                                 <th class="font-normal">{{ $index+1 }}</th>
                                 <th class="font-normal">{{ $ipn['ipn_id'] }}</th>
                                 <th class="font-normal">{{ $ipn['url'] }}</th>
-                                <th class="font-normal">{{ $ipn['error'] }}</th>
-                                <th class="font-normal">{{ $ipn['status'] }}</th>
-                                <th class="font-normal">{{ $ipn['created_date'] }}</th>
+                                <th class="font-normal">{{ \Carbon\Carbon::parse($ipn['created_date'], 'UTC')->tz('Africa/Nairobi')->diffForHumans() }}</th>
                             </tr>
                         @endforeach
                         </tbody>
