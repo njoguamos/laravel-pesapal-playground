@@ -9,12 +9,11 @@ use NjoguAmos\Pesapal\Models\PesapalToken;
 
 class PesapalTokens extends Component
 {
-
     public function render(): View
     {
         return view(view: 'livewire.pesapal-tokens', data: [
-            'tokens' => PesapalToken::latest()->get(),
-            'schedule'  => $this->getScheduled()
+            'tokens'   => PesapalToken::latest()->get(),
+            'schedule' => $this->getScheduled()
         ]);
     }
 
