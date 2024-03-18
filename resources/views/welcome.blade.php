@@ -10,9 +10,9 @@
 
         @livewireStyles
     </head>
-    <body class="font-sans antialiased bg-base-200 flex flex-col min-h-dvh">
+    <body class="font-sans antialiased bg-base-200 flex flex-col space-y-6 py-8 min-h-dvh">
 
-    <h1 class="text-center text-2xl md:text-3xl py-8 font-bold">
+    <h1 class="text-center text-2xl md:text-3xl font-bold">
         <a
             href="https://github.com/njoguamos/laravel-pesapal"
             target="_blank"
@@ -22,6 +22,8 @@
     </h1>
 
     <livewire:pesapal-config />
+
+    <livewire:pesapal-tokens />
 
     @livewireScripts
     </body>
