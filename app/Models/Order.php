@@ -19,9 +19,9 @@ class Order extends Model
     protected function casts(): array
     {
         return [
-            'currency'      => ISOCurrencyCode::class,
-            'redirect_mode' => RedirectMode::class,
-            'country_code'  => ISOCountryCode::class,
+            'currency'            => ISOCurrencyCode::class,
+            'redirect_mode'       => RedirectMode::class,
+            'country_code'        => ISOCountryCode::class,
             'transaction_payload' => 'array',
         ];
     }

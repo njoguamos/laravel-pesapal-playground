@@ -80,11 +80,15 @@
 
     <x-container>
         <x-section title="Payment Status">
-            <div class="mockup-code mt-6">
-                       @foreach($order->transaction_payload as $key => $value)
-                    <pre data-prefix=">" class="text-success"><code>{{ $key }}: {{ is_array($value) ? json_encode($value): $value }} {{ PHP_EOL }}</code></pre>
-                       @endforeach
-            </div>
+            @if($order->transaction_payload)
+                <div class="mockup-code mt-6">
+                    @foreach($order->transaction_payload as $key => $value)
+                        <pre data-prefix=">" class="text-success"><code>{{ $key }}: {{ is_array($value) ? json_encode($value): $value }} {{ PHP_EOL }}</code></pre>
+                    @endforeach
+                </div>
+            @else
+                <p>No transaction status found</p>
+            @endif
         </x-section>
     </x-container>
 </x-app>

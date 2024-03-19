@@ -13,8 +13,7 @@
 
 <h1 class="text-center text-2xl md:text-3xl font-bold px-6">
     <a
-        href="https://github.com/njoguamos/laravel-pesapal"
-        target="_blank"
+        href="{{ route('home') }}"
     >
         Laravel Pesapal Package Playground
     </a>
