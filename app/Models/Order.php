@@ -22,6 +22,7 @@ class Order extends Model
             'currency'      => ISOCurrencyCode::class,
             'redirect_mode' => RedirectMode::class,
             'country_code'  => ISOCountryCode::class,
+            'transaction_payload' => 'array',
         ];
     }
 

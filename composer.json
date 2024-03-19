@@ -10,7 +10,7 @@
         "laravel/telescope": "^5.0",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
-        "njoguamos/laravel-pesapal": "v1.0-beta.3"
+        "njoguamos/laravel-pesapal": "v1.0-beta.5"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.12",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22746c232b48aa0768848a47ad5df8a7",
+    "content-hash": "e03f0fa424352a9f7205eb2bba7f0a36",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3565,16 +3565,16 @@
         },
         {
             "name": "njoguamos/laravel-pesapal",
-            "version": "v1.0-beta.3",
+            "version": "v1.0-beta.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/njoguamos/laravel-pesapal.git",
-                "reference": "e07a59bf142dc3fc44fe3f2e836fd1ca28ebf07d"
+                "reference": "487aae17f794a3f24301e8b93e3f9b367152386d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njoguamos/laravel-pesapal/zipball/e07a59bf142dc3fc44fe3f2e836fd1ca28ebf07d",
-                "reference": "e07a59bf142dc3fc44fe3f2e836fd1ca28ebf07d",
+                "url": "https://api.github.com/repos/njoguamos/laravel-pesapal/zipball/487aae17f794a3f24301e8b93e3f9b367152386d",
+                "reference": "487aae17f794a3f24301e8b93e3f9b367152386d",
                 "shasum": ""
             },
             "require": {
@@ -3633,7 +3633,7 @@
             ],
             "support": {
                 "issues": "https://github.com/njoguamos/laravel-pesapal/issues",
-                "source": "https://github.com/njoguamos/laravel-pesapal/tree/v1.0-beta.3"
+                "source": "https://github.com/njoguamos/laravel-pesapal/tree/v1.0-beta.5"
             },
             "funding": [
                 {
@@ -3641,7 +3641,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-18T21:43:43+00:00"
+            "time": "2024-03-19T17:52:20+00:00"
         },
         {
             "name": "nunomaduro/termwind",

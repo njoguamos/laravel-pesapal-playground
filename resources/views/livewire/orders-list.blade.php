@@ -34,7 +34,7 @@
                                 @endif
                             </th>
                             <th class="font-normal">
-                                <button class="btn btn-sm btn-primary">View Details</button>
+                                <a href="{{ route('order.show', $order) }}" class="btn btn-sm btn-primary">View Details</a>
                             </th>
                         </tr>
                     @endforeach
