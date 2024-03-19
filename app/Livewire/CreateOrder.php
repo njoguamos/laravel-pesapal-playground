@@ -13,10 +13,10 @@ use NjoguAmos\Pesapal\Models\PesapalIpn;
 class CreateOrder extends Component
 {
     #[Validate('required|max:100')]
-    public $description;
+    public $description = '';
 
     #[Validate('required|decimal:0,2')]
-    public $amount;
+    public $amount = 5;
 
     #[Validate('required')]
     public $currency;
@@ -25,31 +25,25 @@ class CreateOrder extends Component
     public $callbackUrl;
 
     #[Validate('required')]
-    public $notificationId;
+    public $notificationId = '';
 
     #[Validate('required')]
-    public $cancellationUrl;
+    public $cancellationUrl = '';
 
     #[Validate('required')]
-    public $name;
+    public $name = '';
 
     #[Validate('required')]
-    public $phone;
+    public $phone = '';
 
     #[Validate('required')]
-    public $email;
+    public $email = '';
 
     public function mount(): void
     {
-        $this->description = 'Payment for goods and services provided by Njogu Amos.';
-        $this->amount = 5.01;
-        $this->notificationId = '';
         $this->currency = ISOCurrencyCode::KES->value;
         $this->callbackUrl = route('pesapal-callback');
         $this->cancellationUrl = route('cancellation-callback');
-        $this->name = 'Njogu Amos';
-        $this->email = 'njoguamos@gmail.com';
-        $this->phone = '0700326009';
     }
 
     public function render(): View
